@@ -1,0 +1,35 @@
+* {
+  background-color: #666;
+  color: #8b8;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#grid {
+  display: grid;
+  grid-template-columns: repeat(var(--GRID-WIDTH), max-content);
+}
+.cell {
+  width: 32px;
+  height: 32px;
+  box-sizing: border-box;
+
+  background-color: #555;
+  border: 1px dotted #444;
+}
+.north {
+  border-top: 2px solid #aaa;
+}
+.south {
+  border-bottom: 2px solid #aaa;
+}
+.east {
+  border-right: 2px solid #aaa;
+}
+.west {
+  border-left: 2px solid #aaa;
+}
+.goal {
+  background-color: gold;
+}
+.start {
+  background-color: lightgreen;
+}
